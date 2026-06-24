@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f77ef94b.css",
-    "main.js": "/Portfolio/static/js/main.c5200aa2.js",
+    "main.css": "/Portfolio/static/css/main.82bf608d.css",
+    "main.js": "/Portfolio/static/js/main.f98fc888.js",
     "static/media/Screenshot_20260624_210848.png": "/Portfolio/static/media/Screenshot_20260624_210848.efcf51c93c5fa7a4cafa.png",
     "static/media/Screenshot_20260624_210702.png": "/Portfolio/static/media/Screenshot_20260624_210702.6b58ca5d463119a26705.png",
     "static/media/Screenshot_20260624_210906.png": "/Portfolio/static/media/Screenshot_20260624_210906.a9168da350c271e0e9ce.png",
@@ -11,16 +11,19 @@
     "static/media/Screenshot_20260624_210759.png": "/Portfolio/static/media/Screenshot_20260624_210759.02c60020db93b66401ce.png",
     "static/media/Screenshot_20260624_211352.png": "/Portfolio/static/media/Screenshot_20260624_211352.b55dd68dab429c8e4bc2.png",
     "static/media/Screenshot_20260624_211458.png": "/Portfolio/static/media/Screenshot_20260624_211458.fba505aabe8abdaa56ba.png",
+    "static/media/Screenshot_20260624_231136.png": "/Portfolio/static/media/Screenshot_20260624_231136.46f64115fbd886908262.png",
     "static/media/Screenshot_20260624_210346.png": "/Portfolio/static/media/Screenshot_20260624_210346.9055678aebab8fdb0109.png",
     "static/media/Screenshot_20260624_210419.png": "/Portfolio/static/media/Screenshot_20260624_210419.11863da9a95dbcc1ca6e.png",
     "static/media/intro-bg.jpg": "/Portfolio/static/media/intro-bg.cf2364827d8b8a98642e.jpg",
     "static/media/Screenshot_20260624_210401.png": "/Portfolio/static/media/Screenshot_20260624_210401.80ec69ca746d4bad793f.png",
+    "static/media/Screenshot_20260624_231007.png": "/Portfolio/static/media/Screenshot_20260624_231007.f365c69a58f2bc9f45b5.png",
+    "static/media/Screenshot_20260624_231109.png": "/Portfolio/static/media/Screenshot_20260624_231109.b2a64dc7afa9cc3d6baf.png",
     "index.html": "/Portfolio/index.html",
-    "main.f77ef94b.css.map": "/Portfolio/static/css/main.f77ef94b.css.map",
-    "main.c5200aa2.js.map": "/Portfolio/static/js/main.c5200aa2.js.map"
+    "main.82bf608d.css.map": "/Portfolio/static/css/main.82bf608d.css.map",
+    "main.f98fc888.js.map": "/Portfolio/static/js/main.f98fc888.js.map"
   },
   "entrypoints": [
-    "static/css/main.f77ef94b.css",
-    "static/js/main.c5200aa2.js"
+    "static/css/main.82bf608d.css",
+    "static/js/main.f98fc888.js"
   ]
 }
