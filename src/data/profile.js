@@ -2,10 +2,10 @@ const profile = {
   name: "Rahul Lanka",
   title: "Software Engineer",
   headline:
-    "Software engineer building product-ready applications across frontend systems, data workflows, performance optimization, and AI-assisted features.",
+    "Software engineer building scalable products with strong user focus.",
   summary:
     "Software Engineer with 3+ years of experience building scalable web and mobile products using React, TypeScript, Node.js, PostgreSQL, Supabase, Firebase, automation workflows, and AI-assisted application features.",
-  location: "Bhimavaram, Andhra Pradesh, India",
+  location: "Bengaluru, Karnataka, India",
   email: "lankarahul121@gmail.com",
   phone: "9052752719",
   experience: "3+ years",

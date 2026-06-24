@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Heroimg from "../components/Heroimg";
 import Footer from "../components/Footer";
+import ProductionStack from "../components/ProductionStack";
+import Trajectory from "../components/Trajectory";
 import WorkCard from "../components/WorkCard";
 import projects from "../data/projects";
 import profile from "../data/profile";
@@ -76,6 +78,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <ProductionStack />
+
+      <Trajectory />
 
       <WorkCard
         projects={projects}

@@ -11,8 +11,10 @@ const Heroimg = () => {
         <img className="intro-img" src={IntroImg} alt="Rahul Lanka portfolio background" />
       </div>
       <div className="content">
-        <span className="eyebrow">Software Engineer Portfolio</span>
-        <p className="hero-intro">{profile.name}</p>
+        <span className="eyebrow">
+          <span className="eyebrow-dot" aria-hidden="true"></span>
+          Open to software engineering opportunities
+        </span>
         <h1>{profile.headline}</h1>
         <p className="hero-copy">
           {profile.summary}
