@@ -65,11 +65,28 @@
     color: #dbe4f0;
     font-size: 0.98rem;
     font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .nav-menu li a:hover,
 .nav-menu li a:focus-visible {
     color: #ffffff;
+}
+
+.nav-menu li a.active {
+    color: #ffffff;
+    position: relative;
+}
+
+.nav-menu li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.45rem;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #22c55e, #06b6d4);
 }
 
 .hamburger {
@@ -111,6 +128,10 @@
 
     .nav-menu li a {
         font-size: 1.1rem;
+    }
+
+    .nav-menu li a.active::after {
+        bottom: -0.25rem;
     }
 
     .hamburger {

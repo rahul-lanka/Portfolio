@@ -13,9 +13,15 @@ const WorkCard = ({ projects, title, intro, showGallery = false }) => {
       <div className="project-grid">
         {projects.map((project) => (
           <article className="project-card" key={project.id}>
-            <div className="project-cover">
+            <a
+              className="project-cover"
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Open ${project.title}`}
+            >
               <img src={project.coverImage} alt={project.title} />
-            </div>
+            </a>
 
             <div className="project-copy">
               <div className="project-meta">
@@ -25,7 +31,11 @@ const WorkCard = ({ projects, title, intro, showGallery = false }) => {
                 </a>
               </div>
 
-              <h3 className="project-title">{project.title}</h3>
+              <h3 className="project-title">
+                <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                  {project.title}
+                </a>
+              </h3>
               <p className="project-summary">{project.summary}</p>
 
               <ul className="project-highlights">

@@ -1,7 +1,7 @@
 import "./NavbarStyles.css";
 import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
@@ -33,16 +33,16 @@ const NavBar = () => {
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/" onClick={closeMenu}>Home</Link>
+          <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
         </li>
         <li>
-          <Link to="/projects" onClick={closeMenu}>Projects</Link>
+          <NavLink to="/projects" onClick={closeMenu}>Projects</NavLink>
         </li>
         <li>
-          <Link to="/about" onClick={closeMenu}>About</Link>
+          <NavLink to="/about" onClick={closeMenu}>About</NavLink>
         </li>
         <li>
-          <Link to="/contact" onClick={closeMenu}>Contact</Link>
+          <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
         </li>
       </ul>
 
