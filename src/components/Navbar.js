@@ -1,49 +1,56 @@
 import "./NavbarStyles.css";
-import {FaBars, FaTimes} from "react-icons/fa";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-
   const [click, setClick] = useState(false);
-  const handleChange = () => setClick(!click);
   const [color, setColor] = useState(false);
-  const changeColor = () => {
-    if(window.scrollY >= 100)
-    {
-      setColor(true);
-    }else{
-      setColor(false);
-    }
-  };
 
-  window.addEventListener("scroll", changeColor);
+  useEffect(() => {
+    const changeColor = () => {
+      setColor(window.scrollY >= 24);
+    };
+
+    window.addEventListener("scroll", changeColor);
+    changeColor();
+
+    return () => window.removeEventListener("scroll", changeColor);
+  }, []);
+
+  const handleChange = () => setClick((prevClick) => !prevClick);
+  const closeMenu = () => setClick(false);
+
   return (
-    <div className={color ? "header header-bg" : "header"}>
-    <Link to="/">
-        <h1>Porfolio</h1>
-    </Link>
-    <ul className={click ? "nav-menu active" : "nav-menu"}>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/Project">Project</Link>
-      </li>
-      <li>
-        <Link to="/Contact">Contact</Link>
-      </li>
-      <li>
-        <Link to="/About">About</Link>
-      </li>
-    </ul>
-    <div className="hamburger" onClick={handleChange}>
-      {click ? (<FaTimes size={20} style={{color: "#fff"}}/>) : ( <FaBars size={20} style={{color: "#fff"}}/>
-     )}
-    
-    </div>
-    </div>
-  )
-}
+    <header className={color ? "header header-bg" : "header"}>
+      <Link to="/" className="brand" onClick={closeMenu}>
+        <span className="brand-mark">RL</span>
+        <div>
+          <p>Rahul Lanka</p>
+          <span>Software Developer</span>
+        </div>
+      </Link>
 
-export default NavBar
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <li>
+          <Link to="/" onClick={closeMenu}>Home</Link>
+        </li>
+        <li>
+          <Link to="/projects" onClick={closeMenu}>Projects</Link>
+        </li>
+        <li>
+          <Link to="/about" onClick={closeMenu}>About</Link>
+        </li>
+        <li>
+          <Link to="/contact" onClick={closeMenu}>Contact</Link>
+        </li>
+      </ul>
+
+      <button className="hamburger" onClick={handleChange} aria-label="Toggle navigation">
+        {click ? <FaTimes size={20} /> : <FaBars size={20} />}
+      </button>
+    </header>
+  );
+};
+
+export default NavBar;

@@ -1,42 +1,52 @@
-import { FaFacebook, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter } from "react-icons/fa";
 import "./FooterStyles.css";
-
-import React from 'react'
+import React from "react";
+import { FaBriefcase, FaEnvelope, FaFileDownload, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import profile from "../data/profile";
 
 const Footer = () => {
   return (
-    <div className="footer">
-        <div className="footer-container">
-            <div className="left">
-                <div className="location">
-                    <FaHome size={20} style={{color:"#fff", marginRight: "2rem "}}/>
-                    <div>
-                        <p>Bhimavram</p>
-                        <p>Andhra Pradesh</p>
-                    </div>
-                </div>
-
-                <div className="phone">
-                    <h4><FaPhone size={20} style={{color:"#fff", marginRight: "2rem "}}/>9052752719</h4>
-                </div>
-
-                <div className="email">
-                    <h4><FaMailBulk size={20} style={{color:"#fff", marginRight: "2rem "}}/>lankarahul121@gmail.com</h4>
-                </div>
-            </div>
-
-            <div className="right">
-                <h4>About Myself</h4>
-                <p>This is me Rahul Lanka.</p>
-                <div className="social">
-                <FaFacebook size={30} style={{color:"#fff", marginRight: "1 rem "}}/>
-                <FaTwitter size={30} style={{color:"#fff", marginRight: "1 rem "}}/>
-                <FaLinkedin size={30} style={{color:"#fff", marginRight: "1 rem "}}/>
-                </div>
-            </div>
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-copy">
+          <span className="footer-kicker">{profile.name}</span>
+          <h3>Software engineer focused on product-quality interfaces, backend-connected workflows, and scalable systems.</h3>
+          <p>
+            Open to software engineering roles where product sense, solid execution, performance,
+            and end-to-end feature ownership matter.
+          </p>
+          <div className="footer-actions">
+            <a href={profile.resumeUrl} download>
+              <FaFileDownload />
+              <span>Download Resume</span>
+            </a>
+            <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">
+              <FaLinkedin />
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
-    </div>
-  )
-}
 
-export default Footer
+        <div className="footer-contact">
+          <div className="footer-item">
+            <FaMapMarkerAlt />
+            <span>{profile.location}</span>
+          </div>
+          <div className="footer-item">
+            <FaPhoneAlt />
+            <a href={`tel:${profile.phone}`}>{profile.phone}</a>
+          </div>
+          <div className="footer-item">
+            <FaEnvelope />
+            <a href={`mailto:${profile.email}`}>{profile.email}</a>
+          </div>
+          <div className="footer-item">
+            <FaBriefcase />
+            <span>Open to SDE, frontend, and product engineering opportunities</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -1,25 +1,50 @@
 import "./HeroimgStyles.css";
-import IntroImg from "../assets/intro-bg.jpg";
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
+import IntroImg from "../assets/intro-bg.jpg";
+import profile from "../data/profile";
 
 const Heroimg = () => {
   return (
-    <div className="hero">
-        <div className="mask">
-         <img className="intro-img"
-         src={IntroImg} alt="IntroImg"/>
+    <section className="hero">
+      <div className="mask">
+        <img className="intro-img" src={IntroImg} alt="Rahul Lanka portfolio background" />
+      </div>
+      <div className="content">
+        <span className="eyebrow">Software Engineer Portfolio</span>
+        <p className="hero-intro">{profile.name}</p>
+        <h1>{profile.headline}</h1>
+        <p className="hero-copy">
+          {profile.summary}
+        </p>
+        <div className="hero-actions">
+          <Link to="/projects" className="btn">View Projects</Link>
+          <a href={profile.resumeUrl} className="btn btn-light" download>
+            Download Resume
+          </a>
         </div>
-        <div className="content">
-         <p>HI, I'M A RAHUL LANKA</p>
-         <h1>SOFTWARE DEVELOPER.</h1>
-         <div>
-            <Link to="/Project" className="btn">Projects</Link>
-            <Link to="/Contact" className="btn btn-light">Contact</Link>
-         </div>
+        <div className="hero-links">
+          <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href={profile.leetcodeUrl} target="_blank" rel="noreferrer">LeetCode</a>
+          <a href={profile.githubUrl} target="_blank" rel="noreferrer">GitHub</a>
         </div>
-    </div>
-  )
-}
+        <div className="hero-metrics">
+          <div>
+            <strong>{profile.experience}</strong>
+            <span>Experience shipping product features in production</span>
+          </div>
+          <div>
+            <strong>{profile.impactScale}</strong>
+            <span>Scale supported through migration and operations tooling</span>
+          </div>
+          <div>
+            <strong>AI + Web</strong>
+            <span>Product development with practical AI-assisted features</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Heroimg
+export default Heroimg;
