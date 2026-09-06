@@ -12,7 +12,7 @@ const Project = () => {
       <Navbar />
       <Heroimg2
         heading="Projects."
-        text="Selected projects that show UI quality, product thinking, and early AI-oriented implementation."
+        text="Selected work showing UI quality, product thinking, backend-connected workflows, and practical AI implementation."
       />
 
       <section className="section">
@@ -21,8 +21,9 @@ const Project = () => {
             <h2>These projects highlight visible product work, while my day-to-day engineering scope goes broader.</h2>
             <p>
               Alongside personal projects, my professional work includes backend migration,
-              database workflows, offline-first synchronization, performance optimization, and
-              internal automation at {profile.currentCompany}.
+              database workflows, REST API integration, authentication-aware product flows,
+              offline-first synchronization, performance optimization, and internal automation at{" "}
+              {profile.currentCompany}.
             </p>
           </div>
           <div className="surface-panel info-card">
@@ -40,7 +41,7 @@ const Project = () => {
       <WorkCard
         projects={projects}
         title="Selected developer work"
-        intro="Each project includes a live link and screenshot previews, while the broader portfolio positioning reflects software engineering scope beyond frontend presentation alone."
+        intro="Each project includes a live link and screenshot previews, while the broader portfolio positioning reflects full-stack software engineering scope beyond frontend presentation alone."
         showGallery
       />
 

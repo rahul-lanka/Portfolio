@@ -1,23 +1,31 @@
 const productionStack = [
   {
+    category: "Languages",
+    items: ["JavaScript (ES6+)", "TypeScript", "Python", "Java", "SQL"],
+  },
+  {
     category: "Frontend",
-    items: ["React", "Redux", "TypeScript", "JavaScript", "HTML5", "CSS3", "Responsive UI"],
+    items: ["React.js", "Redux Toolkit", "HTML5", "CSS3", "Tailwind CSS", "Storybook"],
   },
   {
-    category: "Backend & Data",
-    items: ["Node.js", "Java", "Supabase", "PostgreSQL", "Firebase", "REST APIs", "Authentication"],
+    category: "Backend",
+    items: ["Node.js", "FastAPI", "REST APIs", "Authentication", "RBAC", "Supabase", "Firebase"],
   },
   {
-    category: "Workflow & Delivery",
-    items: ["GitHub Actions", "Docker", "Postman", "Storybook", "Jest", "Jira", "Confluence", "Agile Delivery"],
+    category: "Databases",
+    items: ["PostgreSQL", "Firebase Realtime Database"],
   },
   {
-    category: "Cloud & Platforms",
-    items: ["AWS", "GCP", "Vercel", "Netlify", "Android Studio", "Capacitor"],
+    category: "Testing & DevOps",
+    items: ["Jest", "Postman", "Git", "GitHub Actions", "Docker", "CI/CD", "Jira", "Confluence"],
   },
   {
-    category: "AI & Product Work",
-    items: ["Gemini API", "AI-Assisted Features", "Automation Workflows", "Performance Optimization"],
+    category: "Cloud & Tools",
+    items: ["AWS", "GCP", "Cloudflare", "Netlify", "Vercel", "Android Studio"],
+  },
+  {
+    category: "AI & LLM",
+    items: ["Gemini API", "LangChain", "RAG", "Prompt Engineering", "Embeddings", "Vector Search"],
   },
 ];
 

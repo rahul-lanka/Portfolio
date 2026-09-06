@@ -1,7 +1,8 @@
 import "./WorkCardStyles.css";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
-const WorkCard = ({ projects, title, intro, showGallery = false }) => {
+const WorkCard = ({ projects, title, intro, showGallery = false, moreProjectsUrl }) => {
   return (
     <section className="projects-shell section">
       <div className="section-heading">
@@ -63,6 +64,15 @@ const WorkCard = ({ projects, title, intro, showGallery = false }) => {
           </article>
         ))}
       </div>
+
+      {moreProjectsUrl ? (
+        <div className="more-projects">
+          <a href={moreProjectsUrl} target="_blank" rel="noreferrer">
+            <FaGithub />
+            <span>Check my GitHub for more projects</span>
+          </a>
+        </div>
+      ) : null}
     </section>
   );
 };

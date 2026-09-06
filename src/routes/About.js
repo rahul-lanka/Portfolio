@@ -10,7 +10,7 @@ const About = () => {
       <Navbar />
       <Heroimg2
         heading="About Rahul."
-        text="Software engineer with product experience across frontend systems, backend-integrated workflows, performance optimization, and AI-assisted applications."
+        text="Full-stack software engineer with product experience across frontend systems, backend workflows, databases, performance optimization, automation, and AI-assisted applications."
       />
 
       <section className="section">
@@ -19,9 +19,10 @@ const About = () => {
             <h2>I build software that balances product thinking, reliable execution, and clear user experience.</h2>
             <p>
               I&apos;m Rahul Lanka, a software engineer with {profile.experience} of experience
-              building web and mobile product features. My recent work has included frontend
-              architecture, backend migration, offline-first systems, performance optimization, and
-              internal tooling that removed repetitive operational work.
+              building web and mobile product features across frontend and backend-connected
+              systems. My recent work has included React and TypeScript architecture, data
+              migration, API-driven workflows, offline-first systems, performance optimization,
+              and internal tooling that removed repetitive operational work.
             </p>
             <p>
               I enjoy writing maintainable code, improving user journeys, and working on systems
@@ -35,12 +36,13 @@ const About = () => {
             <div className="surface-panel info-card">
               <h3>Core strengths</h3>
               <div className="chip-row">
-                <span>React</span>
+                <span>React.js</span>
                 <span>TypeScript</span>
                 <span>Node.js</span>
                 <span>Supabase</span>
                 <span>Firebase</span>
                 <span>PostgreSQL</span>
+                <span>REST APIs</span>
               </div>
             </div>
 
@@ -80,7 +82,9 @@ const About = () => {
             </p>
             <div className="chip-row">
               <span>Product Engineering</span>
+              <span>SDE 1 / SDE 2 Roles</span>
               <span>Scalable Systems</span>
+              <span>Backend Workflows</span>
               <span>AI-Assisted Applications</span>
               <span>Problem Solving</span>
             </div>
