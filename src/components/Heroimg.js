@@ -13,7 +13,7 @@ const Heroimg = () => {
       <div className="content">
         <span className="eyebrow">
           <span className="eyebrow-dot" aria-hidden="true"></span>
-          Open to software engineering opportunities
+          Open to SDE 1 and SDE 2 opportunities
         </span>
         <h1>{profile.headline}</h1>
         <p className="hero-copy">
@@ -33,15 +33,15 @@ const Heroimg = () => {
         <div className="hero-metrics">
           <div>
             <strong>{profile.experience}</strong>
-            <span>Experience shipping product features in production</span>
+            <span>Production engineering across web, mobile, APIs, and data workflows</span>
           </div>
           <div>
             <strong>{profile.impactScale}</strong>
-            <span>Scale supported through migration and operations tooling</span>
+            <span>Scale supported through migration, performance, and operations tooling</span>
           </div>
           <div>
-            <strong>AI + Web</strong>
-            <span>Product development with practical AI-assisted features</span>
+            <strong>Full Stack</strong>
+            <span>React, TypeScript, Node.js, Supabase, Firebase, PostgreSQL, and AI APIs</span>
           </div>
         </div>
       </div>
